@@ -2,8 +2,8 @@ extends Node # instancia a classe Node2D
 
 var status = 1 # Variável responsável por fazer o jogo funcionar. Se essa varíavel for 1 você estará jogando, caso contrário o jogo não irá "rodar".
 var vscore = 0 # Pontuação. Caso eu coloque o número 5, ao passar pela primeira parte a pontuação será acrescentada em 5.
-var x = 1.5 # A mudança dessa variável faz com que a velocidade horizontal mude.
-var y = 1.5  # A mudança dessa variável faz com que a velocidade vertical mude.
+var x = 3 # A mudança dessa variável faz com que a velocidade horizontal mude. Eu dobrei o valor de 1.5 para 3, mudando consequentemente a velocidade.
+var y = 3  # A mudança dessa variável faz com que a velocidade vertical mude. Eu dobrei o valor de 1.5 para 3, mudando consequentemente a velocidade.
 
 # executa essa função ao carregar o jogo
 func _ready():
