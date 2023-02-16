@@ -1,0 +1,164 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://tela_inicial.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Ex1" type="Button" parent="."]
+margin_left = 158.0
+margin_top = 28.0
+margin_right = 326.0
+margin_bottom = 79.0
+rect_scale = Vector2( 1.52319, 1.24403 )
+text = "Clique aqui  (Exercício 1)"
+
+[node name="ColorRect_ex1" type="ColorRect" parent="."]
+margin_left = 113.0
+margin_top = 98.0
+margin_right = 439.0
+margin_bottom = 211.0
+
+[node name="resposta_ex1" type="RichTextLabel" parent="ColorRect_ex1"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 3.0
+margin_top = 4.0
+margin_right = 320.0
+margin_bottom = 105.0
+
+[node name="Ex2" type="Button" parent="."]
+margin_left = 692.0
+margin_top = 24.0
+margin_right = 879.0
+margin_bottom = 75.0
+rect_scale = Vector2( 1.52319, 1.24403 )
+text = "Clique aqui (Exercício 2)"
+
+[node name="LineEdit_ex2" type="LineEdit" parent="."]
+margin_left = 685.0
+margin_top = 204.0
+margin_right = 743.0
+margin_bottom = 228.0
+
+[node name="LineEdit2_ex2" type="LineEdit" parent="."]
+margin_left = 766.0
+margin_top = 205.0
+margin_right = 824.0
+margin_bottom = 229.0
+
+[node name="LineEdit3_ex2" type="LineEdit" parent="."]
+margin_left = 854.0
+margin_top = 204.0
+margin_right = 912.0
+margin_bottom = 228.0
+
+[node name="LineEdit4_ex2" type="LineEdit" parent="."]
+margin_left = 930.0
+margin_top = 203.0
+margin_right = 988.0
+margin_bottom = 227.0
+
+[node name="Label_ex2" type="Label" parent="."]
+margin_left = 685.0
+margin_top = 235.0
+margin_right = 744.0
+margin_bottom = 249.0
+text = "Entrada 1"
+
+[node name="Label2_ex2" type="Label" parent="."]
+margin_left = 767.0
+margin_top = 236.0
+margin_right = 826.0
+margin_bottom = 250.0
+text = "Entrada 2"
+
+[node name="Label3_ex2" type="Label" parent="."]
+margin_left = 854.0
+margin_top = 236.0
+margin_right = 913.0
+margin_bottom = 250.0
+text = "Entrada 3"
+
+[node name="Label4_ex2" type="Label" parent="."]
+margin_left = 929.0
+margin_top = 236.0
+margin_right = 988.0
+margin_bottom = 250.0
+text = "Entrada 4"
+
+[node name="ColorRect_ex2" type="ColorRect" parent="."]
+margin_left = 683.0
+margin_top = 92.0
+margin_right = 988.0
+margin_bottom = 193.0
+
+[node name="resposta_ex2" type="RichTextLabel" parent="ColorRect_ex2"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 7.0
+margin_top = 4.0
+margin_right = 297.0
+margin_bottom = 98.0
+
+[node name="Ex3" type="Button" parent="."]
+margin_left = 141.0
+margin_top = 302.0
+margin_right = 313.0
+margin_bottom = 353.0
+rect_scale = Vector2( 1.52319, 1.24403 )
+text = "Clique aqui  (Exercício 3)"
+
+[node name="ColorRect_ex3" type="ColorRect" parent="."]
+margin_left = 109.0
+margin_top = 371.0
+margin_right = 440.0
+margin_bottom = 478.0
+
+[node name="resposta_ex3" type="RichTextLabel" parent="ColorRect_ex3"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 12.0
+margin_top = 4.0
+margin_right = 315.0
+margin_bottom = 101.0
+
+[node name="Ex4" type="Button" parent="."]
+margin_left = 709.0
+margin_top = 307.0
+margin_right = 873.0
+margin_bottom = 358.0
+rect_scale = Vector2( 1.52319, 1.24403 )
+text = "Clique aqui (Exercício 4)"
+
+[node name="Label_ex4" type="Label" parent="."]
+margin_left = 799.0
+margin_top = 540.0
+margin_right = 873.0
+margin_bottom = 561.0
+text = "Entrada "
+
+[node name="LineEdit_ex4" type="LineEdit" parent="."]
+margin_left = 775.0
+margin_top = 487.0
+margin_right = 885.0
+margin_bottom = 534.0
+
+[node name="ColorRect_ex4" type="ColorRect" parent="."]
+margin_left = 672.0
+margin_top = 376.0
+margin_right = 992.0
+margin_bottom = 481.0
+
+[node name="resposta_ex4" type="RichTextLabel" parent="ColorRect_ex4"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 9.0
+margin_top = 3.0
+margin_right = 312.0
+margin_bottom = 100.0
+
+[connection signal="pressed" from="Ex1" to="." method="_on_Ex1_pressed"]
+[connection signal="pressed" from="Ex2" to="." method="_on_Ex2_pressed"]
+[connection signal="pressed" from="Ex3" to="." method="_on_Ex3_pressed"]
+[connection signal="pressed" from="Ex4" to="." method="_on_Ex4_pressed"]
