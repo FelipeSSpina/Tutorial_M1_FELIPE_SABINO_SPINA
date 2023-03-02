@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Novo Projeto De Jogo"
+run/main_scene="res://ex5.tscn"
 config/icon="res://icon.png"
 
 [gui]
