@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Tela_instrucao.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.929412, 0.160784, 0.160784, 1 )
+self_modulate = Color( 0.807843, 0.223529, 0.223529, 1 )
+margin_right = 1926.0
+margin_bottom = 1096.0
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0.0117647, 0.0666667, 0.0392157, 1 )
+self_modulate = Color( 0.745098, 0.984314, 0.741176, 1 )
+margin_left = 43.0
+margin_top = 30.0
+margin_right = 394.0
+margin_bottom = 44.0
+rect_scale = Vector2( 1.66454, 3.69044 )
+text = "PARA SE MOVIMENTAR UTILIZE AS SETAS DO TECLADO"
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color( 0.0117647, 0.0666667, 0.0392157, 1 )
+self_modulate = Color( 0.745098, 0.984314, 0.741176, 1 )
+margin_left = 306.0
+margin_top = 162.0
+margin_right = 327.0
+margin_bottom = 176.0
+rect_scale = Vector2( 3.2926, 4.0747 )
+text = "OU"
+
+[node name="Label4" type="Label" parent="."]
+modulate = Color( 0.0117647, 0.0666667, 0.0392157, 1 )
+self_modulate = Color( 0.745098, 0.984314, 0.741176, 1 )
+margin_left = 26.0
+margin_top = 267.0
+margin_right = 420.0
+margin_bottom = 281.0
+rect_scale = Vector2( 1.66454, 3.69044 )
+text = "PARA SE MOVIMENTAR UTILIZE OS CARACTERES DO TECLADO: 
+A (para se movimentar para a esquerda)
+D (para se movimentar para direita) 
+SPACE (para pular)"
+
+[node name="Label5" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 0.752941 )
+self_modulate = Color( 0.745098, 0.984314, 0.741176, 1 )
+margin_left = 844.0
+margin_top = 50.0
+margin_right = 1242.0
+margin_bottom = 115.0
+rect_scale = Vector2( 2.95097, 8.86071 )
+text = "O OBJETIVO DO JOGO É ACHAR O MELHOR CAMINHO
+PARA DESVIAR DOS OBSTÁCULOS E ENTÃO,
+ CHEGAR NA BANDEIRA FINAL!"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 1052.0
+margin_top = 616.0
+margin_right = 1719.0
+margin_bottom = 848.0
+
+[node name="Label6" type="Label" parent="."]
+modulate = Color( 0.0117647, 0.0666667, 0.0392157, 1 )
+self_modulate = Color( 0.745098, 0.984314, 0.741176, 1 )
+margin_left = 1070.0
+margin_top = 709.0
+margin_right = 1259.0
+margin_bottom = 723.0
+rect_scale = Vector2( 3.2926, 4.0747 )
+text = "VOLTAR AO MENU PRINCIPAL"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
